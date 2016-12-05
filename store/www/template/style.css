@@ -1,0 +1,442 @@
+/* CSS Document */
+	@font-face {
+    font-family: 'HelveticaRegular';
+    src: url('/fonts/HelveticaRegular.ttf');
+	}
+	
+	@font-face {
+	font-family: 'HelveticaMedium';
+    src: url('/fonts/HelveticaMedium.ttf');
+	}
+	
+	@font-face {
+	font-family: 'HelveticaLight';
+    src: url('/fonts/HelveticaLight.ttf');
+	}
+	
+	@font-face {
+	font-family: 'HelveticaBold';
+    src: url('/fonts/HelveticaBold.ttf');
+	}
+	
+	@font-face {
+	font-family: 'HelveticaBlack';
+    src: url('/fonts/HelveticaBlack.ttf');
+	}
+	
+	@font-face {
+	font-family: 'BAUHS93';
+	src: url('/fonts/BAUHS93.ttf');	
+   }
+
+html{
+	height:100%;
+}
+*{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style:none;
+}
+body{
+	background-color:#f3f0d7;
+	font-family:HelveticaRegular;
+	height:100%;
+}
+h2{
+	font-size:1.875em;
+	font-family: HelveticaBlack;
+	color:#000;
+}
+h1{
+	font-size:1.5em;
+	color:#000;
+	text-align:center;
+	padding-bottom:0.625em;
+	border-bottom:0.0625em solid #000;
+	font-family: HelveticaRegular;
+}
+h3{
+	font-size:0.875em;
+	font-weight:bold;
+	color:#f3f0d7;
+	padding:0.9375em 0;
+	font-family: HelveticaBold;
+}
+p{
+	font-size:0.875em;
+	color:#f3f0d7;
+}
+a{
+	font-size:0.875em;
+	color:#000;
+	font-weight:bold;
+	text-decoration:none;
+}
+.wrap{
+	width:70%;
+	margin:0 auto;
+	min-height:100%
+}
+.row{
+	overflow:hidden;
+}
+/*style header*/
+header{
+	background-color:#cee5d0;
+}
+header .row{
+	height:8,31353919239905%;
+	line-height:70px;
+}
+.logoHeader{
+	background-image:url(/images/logo1-1.png);
+	background-repeat:no-repeat;
+	float:left;
+	height:4em;
+	margin-top:0.1875em;
+}
+.logoHeader:hover{
+	background-image:url(/images/logo2-2.png);
+	background-repeat:no-repeat;
+}
+.logoHeaderText{
+	float:left;
+	padding:0 0.9375em;
+	font-family:BAUHS93;
+	font-size:1.5em;
+}
+/*style nav*/
+header .menu{
+	float:left;
+	padding-left:0.9375em;
+	line-height:70px;
+	font-family:HelveticaBold;
+}
+
+header .menu li{
+	float:left;
+	margin-right: 40px;
+	text-transform:uppercase;
+	font-weight:bold;
+	text-align:center;
+	display:block;
+}
+
+header .smalcart{
+	float:right;	
+	height:5%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin: 1em;
+	line-height:18px;
+	font-size:14px;
+	text-align:center;
+}
+
+nav{
+	float:left;
+	padding-left:0.9375em;
+	position:relative;
+	font-family:HelveticaBold;
+}
+nav ul, li ul{
+	list-style:none;
+}
+nav ul li{
+	position:relative;
+}
+nav ul li a{
+	color:#000;
+	text-decoration:none;
+	font-size:0.875em;
+	font-weight:bold;
+	padding:0.3125em 1.25em;
+	transition:all 0.5s;
+}
+nav ul li a:hover{
+	background-color:#e4f2e5;
+}
+nav ul li span ul{
+	display:none;				
+	width:12.5em;
+	height:12.5em;
+	position:absolute;
+	top:3.125em;
+	display:none;
+	z-index:999;
+}
+nav ul li span:hover ul{
+	display:block;
+	background-color:#e4f2e5;
+	transition:all 0.5s;
+	opacity: 0.7;
+}
+nav ul li span ul li{
+	margin:-1.25em 0;
+}
+.basketHeader{
+	float:right;
+	padding:1.3125em 0;
+}
+.pic{
+	background-image:url(/images/bgheader.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:26.25em;
+	background-position:center bottom;
+	z-index:-99;
+}
+.headerLogo{
+	position:absolute;
+	top:11.25em;
+	width:25.9375em;
+}
+.headerLogo p{
+	color:#000;
+	margin-top:3.125em;
+	font-family:HelveticaLight;
+}
+/*style content
+figure{
+	float:left;
+	background-color:#FFFFFF;
+	/*width:16.5em; width:30%;
+	height:15.625em;
+	/*margin-right:1.5625em; margin-right:5%;
+	text-align:center;
+}
+figure img{
+	padding-top:0.9375em;
+	width:85%;
+}
+.mr{
+	margin-right:0;
+}
+.AllAboutPhoto{
+	width:32.5em;
+	margin:1.875em auto 0.625em;
+}
+.content .row{
+	padding:1.25em 0;
+}
+figcaption{
+	margin-top:0.3125em;
+	font-family:HelveticaMedium;
+}
+/*style footer
+footer{
+	background-color:#c8b397;
+}
+aside{
+	height:12.1875em;
+	overflow:hidden;
+}
+.left{
+	float:left;
+	width:22.5em;
+	font-family: HelveticaMedium;
+}
+.right{
+	float:right;
+}
+.right p{
+	padding:0.625em 0;
+	font-family: HelveticaMedium;
+}
+.footercontent{
+	background-color:#cee5d0;
+	height:4.0625em;
+	line-height:4.0625em;
+	overflow:hidden;
+}
+.logo2{
+	float:left;
+	font-size:0.75em;
+	color:#5e454b;
+	font-family:BAUHS93;
+}
+.footercontent ul{
+	float:right;
+	display:inline;
+	font-family:HelveticaBold;
+}
+.footercontent ul li{
+	float:left;
+	margin-left:1.25em;
+}
+.footercontent ul li a{
+	color:#5e454d;
+	font-size:0.625em;
+	font-weight:bold;
+}
+@media screen and (min-width:980px){
+nav{
+	position:absolute;
+	left:450px;
+}
+}
+@media screen and (max-width:980px){
+body{
+	background-color:#FFCCCC;
+}
+.wrap{
+	width:80%;
+}
+.logoHeaderText{
+	padding:0 0.3em;
+}
+nav{
+	padding-left:15em;
+	position:absolute;
+}
+nav ul li a{
+	padding:0.3125em 0.25em;
+}
+.headerLogo{
+	width:45%;
+}
+.AllAboutPhoto{
+	width:80%;
+}
+figure{
+	/*width:16.5em; width:30%;
+	height:14.625em;
+	/*margin-right:1.5625em; margin-right:5%;
+	text-align:center;
+}
+aside{
+	height:20em;
+}
+.left{
+	width:auto;
+	text-align:center;
+}
+.right{
+	float:none;
+	position:relative;
+	text-align:center;
+	top:15px;
+}
+}
+@media screen and (max-width:600px){
+body{
+	background-color:#CCCC66;
+}
+header .row{
+	height:120px;
+	line-height:70px;
+}
+nav{
+	position:absolute;
+	padding-left:0;
+	top:50px;
+}
+figure{
+	float:none;
+	position:relative;
+	height:20em;
+	width:80%;
+	margin-right:0;
+	margin:20px 40px;
+}
+.content .row{
+	padding:0;
+}
+
+}
+@media screen and (max-width:480px){
+body{ background-color:#996699}
+.basketHeader{
+	float:none;
+	position:absolute;
+	top:50px;
+	right:5%;
+}
+h1{
+	font-size:1.3em;
+}
+h2{
+	font-size:1.5em;
+}
+
+figure{
+	float:none;
+	position:relative;
+	height:16.5em;
+	width:80%;
+	margin-right:0;
+	margin:20px 40px;
+}
+.pic{
+	background-position:right bottom;
+}
+.headerLogo{
+	width:80%;
+}
+aside{
+	height:26em;
+}
+}
+@media screen and (max-width:320px){
+body{ background-color:#00FFCC}
+.wrap{
+	width:90%;
+}
+.basketHeader{
+	float:none;
+	position:absolute;
+	top:50px;
+	right:5%;
+}
+h2{
+	font-size:1.2em;
+}
+h1{
+	font-size:1.05em;
+	color:#000;
+	text-align:center;
+	padding-bottom:0.625em;
+	border-bottom:0.0625em solid #000;
+}
+.headerLogo{
+	width:90%;
+	text-align:center;
+}
+figure{
+	height:14em;
+	width:80%;
+}
+
+}
+
+*/
+.pagination a{
+padding:0px 5px 0px 5px;
+margin-right:5px;
+border: #808080 solid 1px;
+
+text-decoration:none;
+}
+.pagination a:hover{
+background: white;
+}
+
+.pagination .activ {
+background: white;
+}
+
+.product{
+	float:left;
+	background: white;
+	text-align:center;
+	width:294px;
+	height:360px;
+	margin: 10px;
+}
+.product_image img{
+	width:294px;
+	height:294px;
+}
+
