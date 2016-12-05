@@ -74,7 +74,7 @@
 			elseif(!trim($array_data['adres'])){ 
 			  $error="Введите адресс!";	
 			}
-			//если нет ощибок, то заносим информацию в поля класса
+			//если нет ошибок, то заносим информацию в поля класса
 			if($error)return $error;
 			else{
 				$this->fio=trim($array_data['fio']);
@@ -123,7 +123,7 @@
 		parent::build_query("INSERT INTO `order` SET",$array);
 		$id=parent::insert_id(); //заказ номер id добавлен в базу
 		
-		if($id) $cart->clearCart();// если заказ успешно записан, то отчищаем корзину
+		if($id) $cart->clearCart();// если заказ успешно записан, то очищаем корзину
 		return $id; // возвращаем номер заказа
 	}
 	
